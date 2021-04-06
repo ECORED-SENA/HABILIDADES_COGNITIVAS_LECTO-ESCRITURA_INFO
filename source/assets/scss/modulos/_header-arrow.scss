@@ -1,0 +1,30 @@
+.header-arrow {
+  position: relative;
+  background: #02255F;
+  padding: 2rem;
+
+  h1,h2,h3 {
+      margin: 0;
+      color:white;      
+  }
+
+  &--xs {
+    padding: 0;
+    height: 8px;
+  }
+
+}
+
+.header-arrow::before {
+   content: '';
+    border-style: solid;
+    border-width: 25px 25px 0px 25px;
+    border-color: #02255F transparent transparent transparent;
+    position: absolute;
+    left: 43%;
+    transform: translateX(50%) rotate(200grad);
+    top: 18px;
+    margin-top: -42px; 
+    z-index: 20;
+}
+
